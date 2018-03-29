@@ -1,0 +1,27 @@
+{
+    "_meta": {
+        "hash": {
+            "sha256": "7f9adaca2a4fe00737e0e7160cda0f13c9f802bfd4067af298626d87d0074212"
+        },
+        "pipfile-spec": 6,
+        "requires": {
+            "python_version": "3.6"
+        },
+        "sources": [
+            {
+                "name": "pypi",
+                "url": "https://pypi.python.org/simple",
+                "verify_ssl": true
+            }
+        ]
+    },
+    "default": {
+        "72eb2aa": {
+            "extras": [
+                "voice"
+            ],
+            "file": "https://github.com/Rapptz/discord.py/archive/rewrite.zip"
+        }
+    },
+    "develop": {}
+}
