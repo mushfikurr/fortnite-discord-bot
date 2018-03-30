@@ -3,7 +3,7 @@ Your Discord companion for everything Fortnite.
 
 
 ## Getting started  
-Getting Raptor running on your machine requires `Python` and `Pipenv`. It will also require the generation of a Discord bot token, and a Fortnite Tracker API token. 
+Using Raptor running on your machine requires `Python` and `Pipenv`. It will also require the generation of a Discord bot token, and a Fortnite Tracker API token. 
 
 ### Prerequisities  
 Install [Python](https://www.python.org/), to run .py files.  
@@ -32,11 +32,11 @@ This file **MUST INCLUDE** a `description`, `token`, and `trn-token`, or the bot
 ```
 `token` is where your the discord token goes.  
 `trn-token` is where your Fortnite Tracker API token goes.  
-This file can easily be expanded, if you wanted to add more features which required a config.
+This file can easily be expanded, if you wanted to add more features which requires a config.
 
 ### Generating tokens
 Generating a discord token is explained [here](https://github.com/reactiflux/discord-irc/wiki/Creating-a-discord-bot-&-getting-a-token). Once you get the token, place it in the config.json file instead of the source.  
-Generating a Fortnite Tracker API is simple, it can be requested [here](https://fortnitetracker.com/site-api)
+Generating a Fortnite Tracker API token is simple, it can be requested [here](https://fortnitetracker.com/site-api)
 
 
 ## Deploying the bot
