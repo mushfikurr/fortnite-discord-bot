@@ -49,19 +49,19 @@ Features of the RAPTOR bot.
 
 ### Statistics
 You can easily pull statistics from the Fortnite Tracker API.  
-`!stats`, shows all commands available for the command group stats. 
+`!stats` shows all commands available for the command group stats. 
 
 ### Lookup
 Looks up for any item in Fortnite, returning relevant statistics and rarities.  
-`!lookup`, shows all commands available for the command group lookup.
+`!lookup` shows all commands available for the command group lookup.
 
 ### Patch
 Returns the latest patch notes for Fortnite.   
-`!patch`, shows all commands available for the command group patch.
+`!patch` shows all commands available for the command group patch.
 
 ### Status
 Returns the status of the fortnite servers.  
-`!status`, shows all commands available for the command group status.
+`!status` shows all commands available for the command group status.
 
 
 
