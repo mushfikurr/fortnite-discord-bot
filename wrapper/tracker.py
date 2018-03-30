@@ -9,7 +9,6 @@ import json
 def get_token():
     """ Retrives FortniteTracker API's token """
     with open('data/config.json', 'r', encoding='utf-8') as doc:
-        #  Please make sure encoding is correct, especially after editing the config file
         config = json.load(doc)
     return config["trn-token"]
 
@@ -26,18 +25,18 @@ async def get_raw_json(nickname, platform):
                     return await response.json()
         except asyncio.TimeoutError:
             print("Error in fetching JSON from API.")
-                
-           
-        
 
 
 class Player():
+    """ A player class representing a request from the API """
     def __init__(self, nickname, platform):
         self.nickname = nickname
         self.platform = platform
     
     async def get_solo_stats(self):
+        """ Returns a stats description for solo """
         stats = await get_raw_json(self.nickname, self.platform)
+        print(f"Retrieving stats {self.nickname}:{self.platform}")
         try:
             win_ratio = stats["stats"]["p2"]["winRatio"]["displayValue"] + "%"
         except KeyError:
@@ -56,10 +55,12 @@ class Player():
             "score_per_match": stats["stats"]["p2"]["scorePerMatch"]["displayValue"],
             "time_per_match": stats["stats"]["p2"]["avgTimePlayed"]["displayValue"],
         }
+
         return solo
          
 
     async def get_duo_stats(self):
+        """ Returns a stats description for duo """
         stats = await get_raw_json(self.nickname, self.platform)
         duo = {
             "epic-handle": stats["epicUserHandle"],
@@ -77,7 +78,8 @@ class Player():
         }
         return duo 
 
-    async def get_squad(self):
+    async def get_squad_stats(self):
+        """ Returns a stats description for squad """
         stats = await get_raw_json(self.nickname, self.platform)
         squad = {
             "epic-handle": stats["epicUserHandle"],
