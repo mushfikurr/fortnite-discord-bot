@@ -3,23 +3,17 @@ import datetime
 import json
 import logging
 from pathlib import Path
+from utils import methods
 
 import discord
 from discord.ext import commands
-
-
-def config_load():
-    with open('data/config.json', 'r', encoding='utf-8') as doc:
-        #  Please make sure encoding is correct, especially after editing the config file
-        return json.load(doc)
-
 
 async def run():
     """
     Running the bot
     """
 
-    config = config_load()
+    config = methods.config_load()
     bot = Bot(config=config,
               description=config['description'])
     try:
@@ -34,6 +28,7 @@ class Bot(commands.Bot):
             command_prefix=self.get_prefix_,
             description=kwargs.pop('description')
         )
+        
         self.start_time = None
         self.app_info = None
 
