@@ -1,12 +1,12 @@
 import asyncio
 import datetime
-import json
 import logging
 from pathlib import Path
 from utils import methods
 
 import discord
 from discord.ext import commands
+
 
 async def run():
     """
@@ -28,7 +28,7 @@ class Bot(commands.Bot):
             command_prefix=self.get_prefix_,
             description=kwargs.pop('description')
         )
-        
+
         self.start_time = None
         self.app_info = None
 
@@ -54,7 +54,7 @@ class Bot(commands.Bot):
         Attempts to load all .py files in /cogs/ as cog extensions
         """
         await self.wait_until_ready()
-        await asyncio.sleep(1)  # ensure that on_ready has completed and finished printing
+        await asyncio.sleep(1)  # on_ready complete
         self.remove_command('help')
         cogs = [x.stem for x in Path('cogs').glob('*.py')]
         for extension in cogs:
@@ -79,10 +79,8 @@ class Bot(commands.Bot):
 
     async def on_message(self, message):
         """
-        This event triggers on every message received by the bot. Including one's that it sent itself.
-
-        If you wish to have multiple event listeners they can be added in other cogs. All on_message listeners should
-        always ignore bots.
+        This event triggers on every message received by the bot.
+        Including ones that it sent itself.
         """
         if message.author.bot:
             return  # ignore all bots
