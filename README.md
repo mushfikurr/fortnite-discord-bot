@@ -55,11 +55,11 @@ You can easily pull statistics from the Fortnite Tracker API.
 Looks up for any item in Fortnite, returning relevant statistics and rarities.  
 `!lookup` shows all commands available for the command group lookup.
 
-### Patch
+### Patch (in development)
 Returns the latest patch notes for Fortnite.   
 `!patch` shows all commands available for the command group patch.
 
-### Status
+### Status (in development)
 Returns the status of the fortnite servers.  
 `!status` shows all commands available for the command group status.
 
