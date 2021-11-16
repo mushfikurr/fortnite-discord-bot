@@ -43,7 +43,7 @@ You can now deploy the bot after all dependencies, directories and tokens are cr
 
 
 ## Features
-Features of the RAPTOR bot.
+Features of the bot.
 
 ### Statistics
 You can easily pull statistics from the Fortnite Tracker API.  
