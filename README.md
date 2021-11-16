@@ -1,4 +1,4 @@
-# Raptor
+# Fortnite Discord.py Bot
 Your Discord companion for everything Fortnite.  
 
 
