@@ -3,7 +3,7 @@ Your Discord companion for everything Fortnite.
 
 
 ## Getting started  
-Using Raptor running on your machine requires `Python` and `Pipenv`. It will also require the generation of a Discord bot token, and a Fortnite Tracker API token. 
+Getting the bot running on your machine requires `Python` and `Pipenv`. It will also require the generation of a Discord bot token, and a Fortnite Tracker API token. 
 
 ### Prerequisities  
 Install [Python](https://www.python.org/), to run .py files.  
