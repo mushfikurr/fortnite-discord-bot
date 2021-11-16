@@ -1,6 +1,4 @@
 # Fortnite Discord.py Bot
-Your Discord companion for everything Fortnite.  
-
 
 ## Getting started  
 Getting the bot running on your machine requires `Python` and `Pipenv`. It will also require the generation of a Discord bot token, and a Fortnite Tracker API token. 
